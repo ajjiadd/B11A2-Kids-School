@@ -1,0 +1,25 @@
+/* import the Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* basic system style  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", serif;
+}
+
+.quicksand{
+    font-family: "Quicksand", serif;
+  }
+
+.raleway{
+    font-family: "Raleway", serif;
+  }
+
+  :root{
+    --white:#f7f7f7;
+    --Sky-Blue:#01ACFD;
+    --Orange:#FEA301;
+    --Black:#111111;
+  }
+

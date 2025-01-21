@@ -21,6 +21,7 @@
   --Sky-Blue: #01acfd;
   --Orange: #fea301;
   --Black: #111111;
+  --Blac2: #171717;
 }
 
 a {
@@ -29,6 +30,17 @@ a {
 
 .btn-primary {
   background-color: var(--Orange);
+  padding: 10px 60px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-secodary{
+  background-color: var(--Black);
   padding: 10px 60px;
   color: var(--white);
   font-size: 20px;
@@ -101,11 +113,58 @@ a {
   display: none;
 }
 
+/* Banner Section  */
+.banner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.heroTitle{
+  font-size: 65px;
+font-weight: 700;
+line-height: 61px;
+}
+
+.bannerContent span:nth-child(1){
+  color: var(--Orange);
+}
+
+.bannerContent span:nth-child(2){
+  color: var(--Sky-Blue);
+}
+
+.TitleDescription{
+  margin: 24px 0;
+  font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+color: var(--Blac2);
+}
+
+.banner img{
+width: 100%;
+}
+
 /* Header section design End */
 
 /* Style for small device */
 @media screen and (max-width: 576px) {
+
+  /* system design */
+  .btn-secodary{
+    padding: 6px 24px 6px 24px;
+    font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+  }
   /* navbar style */
+  .navbar{
+    border-bottom: 0.5px solid var(--Orange);
+  }
+
   .navList,
   .btn-primary,
   .logoTitle {
@@ -140,4 +199,24 @@ a {
   .menuIcon:hover .DropdownMenu {
     display: block;
   }
+
+
+  /* Banner Section  */
+.banner{
+  flex-direction: column-reverse;
+  padding: 20px;
+}
+
+.bannerContent{
+  text-align: center;
+}
+
+.heroTitle{
+  font-size: 32px;
+}
+
+.TitleDescription{
+  font-size: 14px;
+}
+
 }

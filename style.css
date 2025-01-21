@@ -23,6 +23,8 @@
   --Black: #111111;
   --Blac2: #171717;
   --Purple: rgb(93, 88, 239);
+  --whiteBlack: rgb(102,102,102);
+  --DateColorCard: rgb(149, 178, 38);
 }
 
 a {
@@ -167,7 +169,7 @@ width: 100%;
   margin: 0 auto;
 }
 
-.curriculumTitle{
+.curriculumTitle, .StoryTitle{
 text-align: center;
 font-size: 46px;
 font-weight: 700;
@@ -270,6 +272,97 @@ color: var(--Purple);
   color: var(--white);
 }
 
+/* Story Section design  */
+.StorySection{
+  background: url("./assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  padding: 60px 0 60px 0;
+}
+
+.StoryTitle{
+  margin-bottom: 80px;
+}
+
+.storyCardContainer{
+  max-width: 1160px;
+  margin: 0 auto;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+.storyCardBig{
+  grid-row: span 2;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.storyCard{
+  border-radius: 16px;
+background: var(--white);
+}
+
+.storyContent{
+  padding: 0 35px 35px 35px;
+}
+
+.storyCardContainer div img{
+  border-radius: 16px 16px 0px 0px;
+}
+
+.storyTitleBig{
+  font-size: 24px;
+font-weight: 700;
+line-height: 38.35px;
+color: var(--Black);
+margin-bottom:50px ;
+}
+
+.Storydescription{
+  font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+line-height: 28.76px;
+color: var(--whiteBlack);
+
+}
+
+
+.storyTitle{
+  font-size: 15.34px;
+font-weight: 700;
+line-height: 28.76px;
+color: var(--Black);
+padding: 25px;
+
+}
+
+.StoryBtnContainer{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Date{
+  position: relative;
+  font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+line-height: 28.76px;
+color: var(--white);
+border-radius: 47.93px;
+background: rgb(60, 216, 232);
+padding: 15px 18px;
+top: -19px;
+left: 35px;
+}
+
+.smClr{
+ background: var(--DateColorCard);
+}
+.dfClr{
+  background: var(--Purple);
+}
 
 
 /* Main section Design end  */
@@ -353,12 +446,29 @@ line-height: 30px;
   align-items: center;
 }
 
-.curriculumTitle{
+.curriculumTitle, .StoryTitle{
   font-size: 26px;
 }
 
 .arrowBtnContainer{
   display: none;
+}
+
+/* Stroy section */
+.storyCardContainer div img{
+  width: 100%;
+}
+.storyCardBig{
+  display: none;
+}
+
+.storyCardContainer{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Date{
+  left: 15px;
+  padding: 8px 12px;
 }
 
 }

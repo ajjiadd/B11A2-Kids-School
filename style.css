@@ -364,8 +364,97 @@ left: 35px;
   background: var(--Purple);
 }
 
-
 /* Main section Design end  */
+
+
+/* Footer section start  */
+.footerSection{
+  background-color: var(--Sky-Blue);
+}
+
+.footerContent{
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 120px 0;
+  justify-items: center;
+}
+.footerlogoTitle img{
+  max-width: 80px;
+}
+.footerlogoTitle{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.footerlogoTitle h1{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 42.14px;
+font-weight: 700;
+line-height: 39.51px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.fstPart p{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.scndPart{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 700;
+line-height: 30px;
+}
+
+.scndPart ul a li{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: left;
+list-style: none;
+margin-top: 20px;
+}
+
+.thrdPart h2{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 26px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+
+}
+
+.footerImgContainer{
+  margin-top: 35px;
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+
+/* Footer section End  */
+
+
+
+
+
 
 /* Style for small device */
 @media screen and (max-width: 576px) {
@@ -469,6 +558,15 @@ line-height: 30px;
 .Date{
   left: 15px;
   padding: 8px 12px;
+}
+
+
+/* footer section design  */
+.footerContent{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 20px;
 }
 
 }

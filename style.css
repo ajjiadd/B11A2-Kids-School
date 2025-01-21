@@ -150,6 +150,35 @@ width: 100%;
 
 /* Header section design End */
 
+/* Main section Design Start  */
+/* Curriculum Section  */
+.curriculumSection{
+  border-top: 3px dashed rgb(230, 230, 230);
+  border-bottom: 3px dashed rgb(230, 230, 230);
+  background: url("./assets/bg.png");
+}
+
+.curriculumCardContainer{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.curriculumTitle{
+text-align: center;
+font-size: 46px;
+font-weight: 700;
+line-height: 57.5px;
+margin-top: 60px;
+}
+
+.curriculumCardContainer{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+
+/* Main section Design end  */
+
 /* Style for small device */
 @media screen and (max-width: 576px) {
 

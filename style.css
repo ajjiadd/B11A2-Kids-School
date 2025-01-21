@@ -1,76 +1,143 @@
 /* import the Google font  */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* basic system style  */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Quicksand", serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", serif;
 }
 
-.quicksand{
-    font-family: "Quicksand", serif;
-  }
+.quicksand {
+  font-family: "Quicksand", serif;
+}
 
-.raleway{
-    font-family: "Raleway", serif;
-  }
+.raleway {
+  font-family: "Raleway", serif;
+}
 
-  :root{
-    --white:#f7f7f7;
-    --Sky-Blue:#01ACFD;
-    --Orange:#FEA301;
-    --Black:#111111;
-  }
+:root {
+  --white: #f7f7f7;
+  --Sky-Blue: #01acfd;
+  --Orange: #fea301;
+  --Black: #111111;
+}
 
-  a{
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  .btn-primary{
-    background-color: var(--Orange);
-    padding: 10px 60px;
-    color: var(--white);
+.btn-primary {
+  background-color: var(--Orange);
+  padding: 10px 60px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Header section design Start */
+
+/* Navbar design  */
+.navbar {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  /* width: 62px; */
+}
+
+.logoTitle {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navList li {
     font-size: 20px;
-font-weight: 600;
-line-height: 30px;
-border: none;
-border-radius: 10px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.navList .menu-1 {
+  color: var(--Orange);
+
+}
+.navList .menu-2 {
+    color: var(--Sky-Blue);
   }
 
-
-  /* Header section design Start */
-
-  /* Navbar design  */
-  .navbar{
-    max-width: 1160px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+  .navList .menu-3 {
+    color: rgb(5, 212, 223);
   }
 
-  .logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .logo{
-    /* width: 62px; */
+  .navList .menu-4 {
+    color: rgb(93, 88, 239);
   }
 
-  .logoTitle{
-font-size: 32px;
-font-weight: 700;
-line-height: 30px;
+.DropdownMenu {
+  list-style: none;
+}
+
+.menuIcon {
+  display: none;
+}
+
+/* Header section design End */
+
+/* Style for small device */
+@media screen and (max-width: 576px) {
+  /* navbar style */
+  .navList,
+  .btn-primary,
+  .logoTitle {
+    display: none;
   }
 
-  .navList{
-    list-style: none;
-    display: flex;
-    gap: 32px;
+  .menuIcon {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
   }
 
- /* Header section design End */
-
+  .menuIcon ul {
+    display: none;
+    border: 0.64px solid rgb(255, 244, 220);
+    border-radius: 12.77px;
+    box-shadow: inset 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(
+        180deg,
+        rgb(255, 244, 220),
+        rgba(255, 255, 255, 0) 40%
+      ),
+      rgb(255, 255, 255);
+    padding: 5px;
+    position: absolute;
+    top: 70px;
+    right: 3rem;
+    text-align: right;
+    font-size: 18px;
+  }
+  
+  .menuIcon:hover .DropdownMenu {
+    display: block;
+  }
+}
